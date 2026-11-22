@@ -1,0 +1,7 @@
+cache/
+*.tif
+*.npy
+opencellid/
+__pycache__/
+results_run/
+test_results/

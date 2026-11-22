@@ -1,0 +1,8 @@
+{
+  "title": "STAR: survival-time-aware UAV swarm relaying (simulator and results)",
+  "upload_type": "software",
+  "description": "Simulator, Kaggle notebooks and result files for the paper 'Survival-time-aware UAV swarm relaying for life-critical communications in infrastructure-damaged areas: Terrain-realistic case studies from Uzbekistan and Central Asia'.",
+  "creators": [{"name": "Abdirayimov, Renat", "affiliation": "Tashkent University of Information Technologies named after Muhammad al-Khwarizmi", "orcid": "0009-0005-3636-8864"}],
+  "license": "MIT",
+  "keywords": ["UAV", "emergency communications", "disaster response", "relay networks", "Uzbekistan"]
+}

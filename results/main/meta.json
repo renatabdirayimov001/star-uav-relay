@@ -1,0 +1,202 @@
+{
+ "meta": {
+  "sardoba": {
+   "data": "AWS Terrarium DEM + WorldPop 2020",
+   "bs": "OpenCelliD (188 sites)",
+   "n_bs": 188,
+   "zone_pop": 105251.6306071994,
+   "sites": 1677,
+   "dem_min": 152.39401245117188,
+   "dem_max": 345.93701171875
+  },
+  "fergana": {
+   "data": "AWS Terrarium DEM + WorldPop 2020",
+   "bs": "synthetic (OpenCelliD too sparse: 0 sites)",
+   "n_bs": 185,
+   "zone_pop": 286182.4726823113,
+   "sites": 1260,
+   "dem_min": 400.1633605957031,
+   "dem_max": 1890.3116455078125
+  },
+  "karakalpak": {
+   "data": "AWS Terrarium DEM + WorldPop 2020",
+   "bs": "synthetic (OpenCelliD too sparse: 0 sites)",
+   "n_bs": 36,
+   "zone_pop": 10289.913593412,
+   "sites": 1295,
+   "dem_min": 12.308706283569336,
+   "dem_max": 87.77144622802734
+  }
+ },
+ "params": {
+  "dem_res": 100.0,
+  "cell_res": 500.0,
+  "site_res": 1500.0,
+  "h_uav": 150.0,
+  "v_uav": 15.0,
+  "endurance_min": 180.0,
+  "recharge_min": 30.0,
+  "reserve_min": 5.0,
+  "T0_min": 60.0,
+  "H_min": 360.0,
+  "epoch_min": 15.0,
+  "tau_pen_min": 30.0,
+  "urg_D_min": 60.0,
+  "beta": 1.0,
+  "n_victims": 300,
+  "act_window_min": 120.0,
+  "rescue_setup_min": 30.0,
+  "Tg_range_h": [
+   12.0,
+   72.0
+  ],
+  "classes": {
+   "critical": [
+    0.2,
+    10.0,
+    1.0
+   ],
+   "serious": [
+    0.3,
+    48.0,
+    1.5
+   ],
+   "minor": [
+    0.5,
+    150.0,
+    2.0
+   ]
+  },
+  "dmg0": 0.3,
+  "pc0": 0.05,
+  "pc1": 0.4,
+  "ps": 0.3,
+  "f_acc": 1800000000.0,
+  "p_ue": 23.0,
+  "g_uav_acc": 3.0,
+  "b_acc": 1400000.0,
+  "nf_uav": 7.0,
+  "snr_acc": 0.0,
+  "margin_acc": 10.0,
+  "f_bh": 5800000000.0,
+  "p_bh": 30.0,
+  "g_bh": 6.0,
+  "g_gw": 12.0,
+  "b_bh": 10000000.0,
+  "nf_bh": 6.0,
+  "snr_bh": 5.0,
+  "margin_bh": 10.0,
+  "h_bs": 30.0,
+  "h_base": 10.0,
+  "g_bs": 15.0,
+  "nf_bs": 3.0,
+  "clutter_bs": 15.0,
+  "a_los": 4.88,
+  "b_los": 0.43,
+  "eta_los": 0.1,
+  "eta_nlos": 21.0,
+  "k_earth": 1.3333333333333333
+ },
+ "scenarios": {
+  "sardoba": {
+   "name": "Sardoba dam-breach flood (UZ-KZ)",
+   "bbox": [
+    40.3,
+    40.88,
+    68.15,
+    68.85
+   ],
+   "iso": [
+    "UZB",
+    "KAZ"
+   ],
+   "mcc": [
+    434,
+    401
+   ],
+   "zone": {
+    "lat": 40.58,
+    "lon": 68.42,
+    "a_km": 24.0,
+    "b_km": 9.0,
+    "rot_deg": -10.0
+   },
+   "base": {
+    "lat": 40.49,
+    "lon": 68.78,
+    "label": "Guliston (regional FVV HQ)"
+   },
+   "bs_fail_in": 0.85,
+   "bs_fail_out": 0.05,
+   "penetration_db": 10.0,
+   "bs_km2_per_site": 25.0,
+   "ground_speed_kmh": 12.0
+  },
+  "fergana": {
+   "name": "Fergana valley earthquake (Namangan foothills)",
+   "bbox": [
+    40.95,
+    41.42,
+    71.28,
+    71.92
+   ],
+   "iso": [
+    "UZB",
+    "KGZ"
+   ],
+   "mcc": [
+    434,
+    437
+   ],
+   "zone": {
+    "lat": 41.2,
+    "lon": 71.56,
+    "a_km": 16.0,
+    "b_km": 12.0,
+    "rot_deg": 20.0
+   },
+   "base": {
+    "lat": 41.0,
+    "lon": 71.67,
+    "label": "Namangan city"
+   },
+   "bs_fail_in": 0.8,
+   "bs_fail_out": 0.05,
+   "penetration_db": 15.0,
+   "bs_km2_per_site": 15.0,
+   "ground_speed_kmh": 15.0
+  },
+  "karakalpak": {
+   "name": "Amu Darya delta flood (Muynak, Karakalpakstan)",
+   "bbox": [
+    43.45,
+    43.95,
+    58.75,
+    59.4
+   ],
+   "iso": [
+    "UZB"
+   ],
+   "mcc": [
+    434
+   ],
+   "zone": {
+    "lat": 43.68,
+    "lon": 59.05,
+    "a_km": 18.0,
+    "b_km": 10.0,
+    "rot_deg": 30.0
+   },
+   "base": {
+    "lat": 43.5,
+    "lon": 59.33,
+    "label": "Forward command post (satellite terminal)"
+   },
+   "bs_fail_in": 0.9,
+   "bs_fail_out": 0.1,
+   "penetration_db": 10.0,
+   "bs_km2_per_site": 80.0,
+   "ground_speed_kmh": 10.0
+  }
+ }
+}

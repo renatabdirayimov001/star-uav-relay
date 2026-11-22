@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "STAR: survival-time-aware UAV swarm relaying (simulator and results)"
+authors:
+  - family-names: Abdirayimov
+    given-names: Renat
+    orcid: "https://orcid.org/0009-0005-3636-8864"
+    affiliation: "Tashkent University of Information Technologies named after Muhammad al-Khwarizmi"
+version: 1.0.0
+date-released: 2026-11-22
+license: MIT
+repository-code: "https://github.com/renatabdirayimov001/star-uav-relay"
+keywords: [UAV, emergency communications, disaster response, relay networks, Uzbekistan]
