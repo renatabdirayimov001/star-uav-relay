@@ -1,8 +1,10 @@
 # STAR: survival-time-aware UAV swarm relaying
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24433055.svg)](https://doi.org/10.5281/zenodo.24433055)
+
 Code and results for the paper
 
-> R. Abdirayimov, "Survival-time-aware UAV swarm relaying for life-critical communications in infrastructure-damaged areas: Terrain-realistic case studies from Uzbekistan and Central Asia", submitted to *Ad Hoc Networks*.
+> R. Abdirayimov, "Survival-time-aware UAV swarm relaying for life-critical communications in infrastructure-damaged areas: Terrain-realistic case studies from Uzbekistan and Central Asia". Manuscript under preparation.
 
 The simulator evaluates emergency UAV relay networks by the **expected number of lives saved (ELS)**. It couples SOS delivery times with severity-dependent survival curves and compares them with the time ground teams would need without the network. STAR, the proposed planner, grows a gateway-rooted relay tree every 15 min with survival-decay weights and a served-time memory.
 
@@ -56,7 +58,7 @@ On Kaggle, import `notebooks/fvv_kaggle.ipynb` (main experiment) or `notebooks/f
 
 ## Citation
 
-If you use this code, please cite the paper and the archived software (see `CITATION.cff`).
+If you use this code, please cite the paper and the archived software: R. Abdirayimov, STAR simulator and results, Zenodo, doi:10.5281/zenodo.24433055 (see `CITATION.cff`).
 
 ## Licence
 
