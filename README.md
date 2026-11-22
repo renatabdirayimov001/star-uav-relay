@@ -63,3 +63,22 @@ If you use this code, please cite the paper and the archived software: R. Abdira
 ## Licence
 
 Code: MIT (see `LICENSE`). Result files: CC BY 4.0.
+
+## Reproducing the revised manuscript
+
+Environment used: Python 3.13, NumPy 2.5, SciPy 1.18, pandas 3.0, Matplotlib 3.11, rasterio (for the WorldPop rasters); PuLP 2.9 with HiGHS 1.16 for the optimality check (`pip install "pulp==2.9.0" highspy`).
+
+Seeds: realisation `s` uses `numpy.random.default_rng(1000 + s)`; the planner of method runs uses `default_rng(s)`. Main experiment: seeds 0–29; sensitivity: seeds 0–14.
+
+| Output | Command / file |
+| --- | --- |
+| Main experiment (Tables 6, 7; Fig. 3) | `python fvv_sim.py --cells 434.csv.gz 401.csv.gz 437.csv.gz --out results` (or `notebooks/fvv_kaggle.ipynb`) |
+| Sensitivity (Table 9; Fig. 6) | `notebooks/fvv_sensitivity.ipynb`; 60-min endurance: `python revision/driver.py end60 <scenario>` |
+| Fig. 5 with 30 seeds | `python revision/driver.py fig5 <scenario>`, then `python revision/figs2.py time` |
+| Scarce-coverage experiment (K = 3, 4) | `python revision/driver.py scarce <scenario>` |
+| Holm-adjusted p-values, bootstrap CIs, effect sizes | `python revision/stats.py` → `revision/results/stats_*.csv` |
+| Terrain-blocked links (Table 8) | `python revision/links.py`, `python revision/gwloss.py` |
+| MILP optimality check | `python revision/gap2.py <scenario>` → `revision/results/gap2_*.csv` |
+| Figures 2–6 | `python revision/figs2.py maps snap time k sens` |
+
+Paths to the cache and OpenCelliD files are set at the top of each script; OpenCelliD files must be downloaded from opencellid.org (CC BY-SA 4.0).
