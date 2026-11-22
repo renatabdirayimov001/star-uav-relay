@@ -54,7 +54,7 @@ On Kaggle, import `notebooks/fvv_kaggle.ipynb` (main experiment) or `notebooks/f
 
 - `results/main/`: per-run metrics (`runs.csv`), means and standard deviations (`summary.csv`), paired Wilcoxon tests (`tests.csv`), scenario metadata (`meta.json`).
 - `results/sensitivity/`: eight one-at-a-time settings (altitude, survival scale, SOS onset window, ground discovery time).
-- `figures/`: figures used in the paper. Icons in `fig1_architecture.png` are designed by Freepik (freepik.com).
+- `figures/`: figures used in the paper.
 
 ## Citation
 
